@@ -31,7 +31,7 @@ jobs:
 
       # 部署到github
       - name: Deploy to Github
-        uses: Immortalsby/BYSWS2023
+        uses: Immortalsby/BYSWS2023@v1
         with:
           branch: build # 打包的内容放到build分支下
           folder: build # 你打包后存放的文件
