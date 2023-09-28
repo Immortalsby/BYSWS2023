@@ -5,7 +5,7 @@ name: Boyuan SHI's  [X]  World
 on:
   push:
     branches:
-      - master
+      - main
 
 # 工作流
 jobs:
