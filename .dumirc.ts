@@ -10,11 +10,16 @@ export default defineConfig({
 
   themeConfig: {
     name: "BY.S",
-    logo: "logo.png",
-    footer: "Copyright © 2022-present | Powered by self",
+    logo: "/logo.png",
+    footer: "Copyright © 2023 | Powered by self",
     socialLinks: {
       github: 'https://github.com/Immortalsby/BYSWS2023',
       linkedin: 'https://www.linkedin.com/in/boyuan-shi-9861b7157/',
+    },
+    nav: {
+      'en-US': [{ title: 'Coding', link: '/coding' },{ title: 'Blog', link: '/blog' }],
+      'zh-CN': [{ title: '编程', link: '/zh-CN/coding' },{ title: '博客', link: '/zh-CN/blog' }],
+      'fr-FR': [{ title: 'Coding', link: '/fr-FR/coding' },{ title: 'Blog', link: '/fr-FR/blog' }],
     },
   },
   favicons: [
@@ -24,5 +29,5 @@ export default defineConfig({
     { id: 'en-US', name: 'EN' },
     { id: 'fr-FR', name: 'FR' },
     { id: 'zh-CN', name: '中文' },
-  ],
+  ]
 });
