@@ -67,7 +67,7 @@ service sshd restart
 
 ## 以下是一键修改工具：
 ```bash
-sudo sed -i '/^Port 22$/s/^/#/' /etc/ssh/sshd_config
+sudo sed -i '/^#Port 22/a Port 22\nPort 2245' /etc/ssh/sshd_config
 firewall-cmd --zone=public --add-port=2245/tcp --permanent
 semanage port -a -t ssh_port_t -p tcp 2245
 sudo sed -i '/^Port 22$/s/^/#/' /etc/ssh/sshd_config
